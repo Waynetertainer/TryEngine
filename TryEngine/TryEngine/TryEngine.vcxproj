@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\TryEngine\Log.h" />
     <ClInclude Include="src\test.h" />
     <ClInclude Include="src\TryEngine.h" />
     <ClInclude Include="src\TryEngine\Application.h" />
@@ -27,6 +28,7 @@
     <ClInclude Include="src\TryEngine\test2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\TryEngine\Log.cpp" />
     <ClCompile Include="src\TryEngine\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -106,6 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>TE_PLATFORM_WINDOWS;TE_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)TryEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,6 +138,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>TE_PLATFORM_WINDOWS;TE_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)TryEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
